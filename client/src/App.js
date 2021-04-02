@@ -9,7 +9,7 @@ import ApolloClient from 'apollo-boost';
 const client = new ApolloClient({
   // get token from LocalStorage
   request: operation => {
-    const token = localStorage.getItem(id_token);
+    const token = localStorage.getItem(token);
 
     operation.setContext({
       headers: {
